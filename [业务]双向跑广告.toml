@@ -1,0 +1,151 @@
+# 文件目录配置
+input_folder = "./【错误】的session和tdata将被放入这里/双向"
+error_folder = "./【错误】的session和tdata将被放入这里"
+output_folder = "./【新生成】的全格式协议在这里"
+# 完成所有任务后，且不注销的账号，将放入这个文件夹
+alive_folder = ""
+
+# 代理文件路径
+proxy_file = "./【代理】一行一个写这个文件内.txt"
+
+# 做新设备的线程数量，推荐1-5。过多其实并不好。
+thread_cnt = 50
+# 线程启动延迟，推荐0.5-2
+thread_startup_delay = 0.2
+
+# 连接超时重试次数
+connect_retry_cnt = 3
+
+# 强制老会话的登录方案
+# android：安卓
+# ios：苹果
+# pc：电脑
+# default：默认(根据json文件内容配置登录方案)
+force_login = "default"
+
+# 是否生成新的设备。如果选择False，实际上就是筛活跃号功能。
+gen_new_device = false
+
+# 是否格式化活跃号码
+format_active_number = true
+
+# 是否猜测账号价值？
+is_guess_account_value = false
+
+# 代理类型，支持http、socks5 两种。覆盖整个代理文件内的代理类型。
+proxy_type = "socks5"
+
+# 默认密码，在无json的情况下启用
+default_password = ""
+
+# 强制密码，覆盖整个代理文件内的密码。
+force_password = ""
+
+# 新密码。一旦设置，程序将会在旧密码Ok的时候，尝试修改密码为新密码。不修改的时候设置为： new_password = ""
+new_password = ""
+
+# 密码错误时，是否自动重置密码（一周）。
+reset_password_when_origin_password_error = false
+
+# 是否踢掉其他的设备。 true: 踢掉其他设备，false: 不踢掉其他设备
+is_kick_other = false
+
+# 最后是否注销。 true: 注销，false: 不注销
+is_logout = false
+
+# 是否识别注册时间
+is_guess_register_time = false
+
+# 清空聊天记录的相关参数
+# 总开关
+need_clean = false
+
+# 清空联系人
+is_clean_contact = false
+# 保留接码记录
+is_keep_777000 = false
+# 只保留接码记录的第一个
+is_keep_777000_first = false
+# 归档而非删除
+is_use_archive_instead_delete = false
+
+# 是否测试双向
+is_test_spam = false
+
+# 尝试解封
+is_try_unblock = false
+
+# 是否随机用户昵称+清空简介
+is_clean_acc_info = false
+
+# 是否重新分配登录邮箱
+is_reassign_login_email = false
+
+# 是否下载媒体
+is_download_media = false
+
+# 是否检查对话
+is_check_dialog = false
+
+# 是否检查自建群
+is_check_owner_group = false
+
+# 检查自建群的年龄（日）
+how_old_days = 365
+
+# 是否写入报告
+write_report_to_account = false
+
+# 测试号码文件
+test_phone_file = ""
+# 测试次数
+test_phone_times = 2
+
+# Boost群组文件
+boost_group_file = ""
+
+# 隐藏手机号
+is_hide_phone_number = false
+
+# 是否无条件筛选冻结
+check_frozen = false
+
+# 是否无条件筛选NFT或Star余额
+check_stars_or_nft = false
+
+
+# 是否检查冻结状态
+is_check_frozen = false
+
+
+
+# 是否清理用户名
+is_clean_username = false
+
+# 是否清理头像
+is_clean_avatar = false
+
+# 是否生成passkey
+is_gen_passkey = false
+
+# 是否踢掉其他passkey
+is_kick_other_passkey = false
+
+# 是否利用passkey制作新设备
+is_use_passkey_new_device = false
+
+# passkey新设备类型 (desktop/ios/android)
+new_passkey_device_type = "desktop"
+
+# passkey制作新设备后是否保留passkey
+is_keep_passkey_after_new_device = false
+
+# sponsor feature
+# 是否开启 sponsor 功能
+is_check_sponsor = true
+# 检查sponsor的账号比例
+view_sponsor_rate = 100
+# sponsor的target机器人列表
+sponsor_target_file = "./【sponsor】的目标在这里.txt"
+# 点击sponsor的账号比例
+click_sponsor_rate = 4
